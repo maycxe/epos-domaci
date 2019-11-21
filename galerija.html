@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4fb991a9c2.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/galerija.css" />
+
+  <title>3Paline - Galerija</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <a href="index.html" class="logo">3Paline</a>
+    <div class="menu-toggle"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="oNama.html">O Nama</a></li>
+        <li><a href="sladoledi.html">Sladoledi</a></li>
+        <li><a href="kolaci.html">Kolači</a></li>
+        <li><a href="galerija.html" class="active">Galerija</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="clearfix"></div>
+  </header>
+
+  <h1 class="galerija-heading">Galerija</h1>
+  <div class="oNama">
+    <div class="container">
+      <div class="box a">
+        <img src="img/3paline1.jpg" alt="" />
+      </div>
+      <div class="box b">
+        <img src="img/3paline2.jpg" alt="" />
+      </div>
+      <div class="box c">
+        <img src="img/3paline3.jpg" alt="" />
+      </div>
+      <div class="box d">
+        <img src="img/kolac4.jpg" alt="" />
+      </div>
+      <div class="box e">
+        <img src="img/orange.jpg" alt="" />
+      </div>
+      <div class="box f">
+        <img src="img/3paline5.jpg" alt="" />
+      </div>
+      <div class="box g">
+        <img src="img/3paline4.jpg" alt="" />
+      </div>
+      <div class="box h">
+        <img src="img/bg3.jpg" alt="" />
+      </div>
+      <div class="box i">
+        <img src="img/kolac2.jpg" alt="" />
+      </div>
+      <div class="box j">
+        <img src="img/bg4.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="copyright">Copyright &copy; 2019 Maja & Marija</p>
+  </footer>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('.menu-toggle').toggleClass('active');
+        $('nav').toggleClass('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
